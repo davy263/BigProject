@@ -1,0 +1,533 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>HOMEASSURED Real Estate Services</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+
+
+<style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+body{
+margin:0;
+padding:0;
+
+}
+.header{
+
+height:80vh;
+min-width:450px;
+
+background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.5)),url('{% static 'houses/images/fam2.jpg' %}');
+background-size:cover;
+background-position:center center;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family: sans serif;
+
+    }
+
+
+
+
+
+
+
+.search-box{
+
+	top:60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.btn.btn-search{
+	border-radius: 0;
+	height: 40px;
+	background: #03a3b2;
+	color: #fff;
+}
+
+.search-input:focus{
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.percent {
+    padding: 5px;
+    background-color:#078ee8;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    height: 35px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.wishlist {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eee;
+    color:#191b1c;
+
+    padding: 6px;
+    cursor: pointer
+}
+
+.img-container {
+    position: relative
+}
+
+.img-container .first {
+    position: absolute;
+    width: 100%
+}
+
+.img-container img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 33vh;
+    width: 83vh;
+object-fit: cover;
+}
+
+.product-detail-container {
+    padding: 10px;
+}
+
+.ratings i {
+    color: #a9a6a6
+}
+
+.ratings span {
+    color: #a9a6a6
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    font-size: 10px;
+    border-radius: 50%;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: #dc3545;
+    background-color: #dc3545;
+    color: #fff
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #4a4a4a !important;
+    padding:92px;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+.social-login a {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+
+
+}
+............pop up css
+.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">HOMEASSURED</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                {% if user.is_authenticated %}
+                <a href="{% url 'Estate-create' %}" class="nav-item nav-link active">Rent/Sell</a>
+                {% else %}
+                 <a href="{% url 'Estate-log in' %}" class="nav-item nav-link active" data-toggle="modal" data-target="#loginModal">Rent/Sell</a>
+                {% endif %}
+                <a href="#" class="nav-item nav-link">Houses</a>
+                <a href="#" class="nav-item nav-link " >Apartments</a>
+            </div>
+              <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Location">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+            <div class="navbar-nav ml-auto">
+                 {% if user.is_authenticated %}
+
+                   <a   href="#" class="nav-item nav-link" >Hi, {{request.user}} </a>
+ <a href="{% url 'Estate-logout' %}" class="nav-item nav-link">Favourite</a>
+                <a href="{% url 'Estate-logout' %}" class="nav-item nav-link">Profile</a>
+                   <a href="{% url 'Estate-logout' %}" class="nav-item nav-link">LOGOUT</a>
+                 {% else %}
+
+                   <div class="social-login ">
+                      <a style="background:#3b5998; color: #fff;" class="nav-item nav-link"  href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-facebook"></i></a>
+                      <a  style="background:#1da1f2; color: #fff;"class="nav-item nav-link"  href=""><i class="fab fa-twitter"></i></a>
+                      <a  style="background: #ea4335; color: #fff;" class="nav-item nav-link"  href=""><i class="fab fa-google"></i></a>
+                   </div>
+                   <a   href="{% url 'Estate-log in' %}" class="nav-item nav-link" >Log in</a>
+			       <a   href="{% url 'Estate-register' %}"  class="nav-item nav-link">Register</a>
+                 {% endif %}
+
+            </div>
+
+        </div>
+    </nav>
+</div>
+
+<form method="post" action="">
+
+</form>
+<div class="container-fluid padding">
+
+<div class="row padding">
+<div  class="col-12">
+    <h2  style="font-style:none;font-size:30px;margin-top:18px;" class="display-4">All Houses</h2>
+</div>
+</div>
+
+</div>
+<div class="container-fluid mt-3 mb-3">
+    <div  class="row g-2">
+       {% for post in posts %}
+        <div class="col-md-3 col-lg-3 col-sm-12 ">
+
+            <div style="height:200;" class="card ">
+
+                <div class="img-container">
+                    <div class="d-flex justify-content-between align-items-center p-2 first"><span class="percent"><i class="fa fa-map-marker">&nbsp</i> {{post.location}}</span> <span class="wishlist"><i class="fa fa-heart"></i></span> </div> <a href="{% url 'Estate-detail' post.id%}"><img  src="{{ post.image.url}}" class="img-fluid"></a>
+                </div>
+                <div class="product-detail-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="mb-0">{{post.details}}</h6> &nbsp<span class=" font-weight-bold">{{post.price}}</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <div class="ratings"> <i class="fa fa-user"></i> <span>{{post.agent}}</span> </div>
+           <div class="size"> <span style="font-size:15px;">For&nbsp{{post.Rent_or_Buy}}</span>  </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+         {% endfor %}
+
+    </div>
+     {% if is_paginated %}
+
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+
+    {% endif %}
+</div>
+
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Popular Areas</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Goba</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Arusha</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Makongo</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Sinza</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Dodoma</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">HOMEASSURED</a></p>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+<!-- ./pop up form -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>You have to Login first to Rent/Sell</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <a action="#" method="post">
+
+
+             <a href="{% url 'Estate-log in' %}"><button  type="button " class="btn btn-info btn-block btn-round">Login Here</button></a>
+
+          </form>
+
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="{% url 'Estate-register' %}" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- jQuery -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+
+  <!-- Popper JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <!-- Bootstrap JS -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+   <!-- Custom Script -->
+  <script  src="js/script.js"></script>
+
+
+
+</body>
+</html>
